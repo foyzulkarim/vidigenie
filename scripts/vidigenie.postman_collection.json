@@ -1,0 +1,456 @@
+{
+	"info": {
+		"_postman_id": "e496b923-9d93-454a-b9a5-558a6ad0b261",
+		"name": "vidigenie",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2021215"
+	},
+	"item": [
+		{
+			"name": "apigw",
+			"item": [
+				{
+					"name": "4001-auth-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"Auth Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/auth/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"auth",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4002-user-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"User Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/user/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"user",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4003-upload-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"Upload Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/upload/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"upload",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4004-storage-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"Storage Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/storage/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"storage",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4005-metadata-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"Metadata Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/metadata/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"metadata",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4006-transcoding-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"Transcoding Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/transcoding/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"transcoding",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4007-notification-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"Notification Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/notification/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"notification",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4008-search-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"Search Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/search/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"search",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4009-streaming-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"Streaming Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/streaming/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"streaming",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4010-cdn-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"CDN Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/cdn/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"cdn",
+								"health"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "4011-analytics-service",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Service is up and running\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Service name is correct\", function () {",
+									"    pm.expect(pm.response.json().service).to.eql(\"Analytics Service\");",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:4000/analytics/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "4000",
+							"path": [
+								"analytics",
+								"health"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "http://localhost:4000",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4000/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": [],
+			"description": "Default route handler return 404",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Default route handler return 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			]
+		}
+	]
+}
