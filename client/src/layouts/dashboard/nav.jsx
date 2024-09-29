@@ -82,10 +82,10 @@ export default function Nav({ openNav, onCloseNav }) {
         <Box sx={{ textAlign: 'center' }}>
           <Typography variant="h6">View the source code on GitHub</Typography>
 
-          <Button variant="body2" target="_blank" href='https://github.com/foyzulkarim/vidigenie-server'>
+          <Button variant="body2" target="_blank" href='https://github.com/foyzulkarim/vidigenie/tree/main/services'>
             Server
           </Button>
-          <Button variant="body2" target="_blank" href='https://github.com/foyzulkarim/vidigenie-client'>
+          <Button variant="body2" target="_blank" href='https://github.com/foyzulkarim/vidigenie/tree/main/client'>
             Client
           </Button>
         </Box>
