@@ -1,0 +1,20 @@
+{
+  "short_name": "CommitStreams",
+  "name": "CommitStreams",
+  "icons": [
+    {
+      "src": "favicon/commitstream-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon/commitstream-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
