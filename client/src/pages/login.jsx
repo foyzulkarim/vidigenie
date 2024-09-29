@@ -21,7 +21,7 @@ export default function LoginPage() {
   return (
     <>
       <Helmet>
-        <title> Login | CommitStreams </title>
+        <title> Login | Vidigenie </title>
       </Helmet>
 
       <LoginView />

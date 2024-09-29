@@ -8,7 +8,7 @@ export default function UserPage() {
   return (
     <>
       <Helmet>
-        <title> User | CommitStreams </title>
+        <title> User | Vidigenie </title>
       </Helmet>
 
       <UserView />

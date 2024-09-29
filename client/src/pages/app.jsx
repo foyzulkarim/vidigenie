@@ -8,7 +8,7 @@ export default function AppPage() {
   return (
     <>
       <Helmet>
-        <title> Dashboard | CommitStreams </title>
+        <title> Dashboard | Vidigenie </title>
       </Helmet>
 
       <AppView />

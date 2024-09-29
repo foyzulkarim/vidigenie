@@ -8,7 +8,7 @@ export default function BlogPage() {
   return (
     <>
       <Helmet>
-        <title> Blog | CommitStreams </title>
+        <title> Blog | Vidigenie </title>
       </Helmet>
 
       <BlogView />

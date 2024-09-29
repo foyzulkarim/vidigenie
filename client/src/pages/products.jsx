@@ -8,7 +8,7 @@ export default function ProductsPage() {
   return (
     <>
       <Helmet>
-        <title> Products | CommitStreams </title>
+        <title> Products | Vidigenie </title>
       </Helmet>
 
       <ProductsView />
