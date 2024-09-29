@@ -32,13 +32,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/auth/health",
+							"raw": "http://localhost:4000/api/auth/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"auth",
 								"health"
 							]
@@ -69,13 +70,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/user/health",
+							"raw": "http://localhost:4000/api/user/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"user",
 								"health"
 							]
@@ -106,13 +108,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/upload/health",
+							"raw": "http://localhost:4000/api/upload/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"upload",
 								"health"
 							]
@@ -143,13 +146,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/storage/health",
+							"raw": "http://localhost:4000/api/storage/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"storage",
 								"health"
 							]
@@ -180,13 +184,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/metadata/health",
+							"raw": "http://localhost:4000/api/metadata/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"metadata",
 								"health"
 							]
@@ -217,13 +222,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/transcoding/health",
+							"raw": "http://localhost:4000/api/transcoding/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"transcoding",
 								"health"
 							]
@@ -254,13 +260,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/notification/health",
+							"raw": "http://localhost:4000/api/notification/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"notification",
 								"health"
 							]
@@ -291,13 +298,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/search/health",
+							"raw": "http://localhost:4000/api/search/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"search",
 								"health"
 							]
@@ -328,13 +336,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/streaming/health",
+							"raw": "http://localhost:4000/api/streaming/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"streaming",
 								"health"
 							]
@@ -365,13 +374,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/cdn/health",
+							"raw": "http://localhost:4000/api/cdn/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"cdn",
 								"health"
 							]
@@ -402,13 +412,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:4000/analytics/health",
+							"raw": "http://localhost:4000/api/analytics/health",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
 							"port": "4000",
 							"path": [
+								"api",
 								"analytics",
 								"health"
 							]

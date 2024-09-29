@@ -9,7 +9,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "newman": "newman run scripts/vidigenie.postman_collection.json",
-    "postman": "postman run scripts/vidigenie.postman_collection.json"
+    "postman": "postman run scripts/vidigenie.postman_collection.json",
+    "dev": "bash scripts/run-services.sh"
   },
   "keywords": [],
   "author": "",

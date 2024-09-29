@@ -20,7 +20,7 @@ const AuthProvider = ({ children }) => {
   useEffect(() => {
     const fetchUserProfile = async () => {
       try {
-        const response = await fetch(`${apiUrl}/user`, {
+        const response = await fetch(`${apiUrl}/auth/user`, {
           credentials: 'include'  // Crucial setting 
         });
 

@@ -18,7 +18,6 @@ const proxy = require('@fastify/http-proxy');
  * ## User Service : 4002
  */
 
-
 const services = [
   { name: 'analytics', port: 4011 },
   { name: 'auth', port: 4001 },
@@ -36,19 +35,21 @@ const services = [
 for (const service of services) {
   server.register(proxy, {
     upstream: `http://localhost:${service.port}`,
-    prefix: `/${service.name}`,
+    prefix: `/api/${service.name}`,
     http2: false,
   });
-} 
+}
 
 server.all('/', (req, res) => {
   res.code(404).send({ message: 'Not Found' });
 });
 
+const port = 4000;
+
 const start = async () => {
   try {
-    await server.listen({ port: 4000 });
-    console.log('API Gateway is running on http://localhost:4000');
+    await server.listen({ port: port });
+    console.log(`API Gateway is running on http://localhost:${port}`);
   } catch (error) {
     server.log.error(error);
     process.exit(1);
